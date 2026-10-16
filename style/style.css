@@ -53,10 +53,12 @@ a:focus {
 ul {
   margin: calc(var(--spacing-unit) * 1) 0;
   padding-left: calc(var(--spacing-unit) * 2.5);
+  display: block;
 }
 
 li {
   margin-bottom: calc(var(--spacing-unit) * 0.5);
+  display: list-item;
 }
 
 /* ==========================================================
@@ -152,13 +154,20 @@ section h2 {
 /* ==========================================================
    SKILLS
    ========================================================== */
-.skills-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 1.5);
+.skills-list {  
+  list-style: none;  
+  display: grid;  
+  grid-template-columns: 1fr;  
+  gap: var(--spacing-unit);  
   padding: 0;
 }
+/* .skills-list { */
+/*   list-style: none; */
+/*   display: flex; */
+/*   flex-wrap: wrap; */
+/*   gap: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 1.5); */
+/*   padding: 0; */
+/* } */
 
 .skills-list li {
   margin: 0;
